@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="plugins/rating/jquery.raty.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/rating/jquery.raty.js"></script>
+    <script src="https://kit.fontawesome.com/487d1d149e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="main">
+          <div class="form-group has-search mb-0">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" id="search" placeholder="Search">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-0 mb-4">
+    <div id="loadingSection" class="col-12 hidden text-center"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+    <div id="gallerySection">
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-start">
+            <h1 id="mainTitle"></h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9 d-flex justify-content-start">
+            <p id="subtitle"></p>
+          </div>
+          <div class="search-nav col-md-3 d-flex justify-content-around">
+              <a class="text-decoration-none" href="#!">Map</a>
+              <a class="text-decoration-none" href="#!">Save</a>
+              <a class="text-decoration-none" href="#!">Print</a>
+          </div>
+        </div>
+        <!-- Gallery -->
+        <div class="row">
+          <div class="gallery-div col-lg-6 col-md-12 mb-lg-0 p-2">
+            <img id="streetViewImage" number="0" src="" class="gallery-img1 pb-1 w-100 streetViewImage" alt=""/>
+          </div>
+
+          <div class="gallery-div col-lg-3 col-md-6 mb-lg-0 p-2">
+            <img src="" number="1" class="gallery-img2 w-100 pb-2 streetViewImage" alt=""/>
+            <img src="" number="2" class="gallery-img2 w-100 pb-1 streetViewImage" alt=""/>
+          </div>
+
+          <div class="gallery-div col-lg-3 col-md-6 mb-lg-0 p-2">
+            <img src="" number="3" class="gallery-img2 w-100 pb-2 streetViewImage" alt=""/>
+            <img src="" number="4" class="gallery-img2 w-100 pb-1 streetViewImage" alt=""/>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4">
+        <!-- Gallery -->
+      </section>
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-md-6 d-flex p-4">
+            <div class="icon mr-3"><i class="fas fa-shield-alt"></i></div>
+            <div class="text__info">
+              <h3>Safe</h3>
+              <p>This Area is generally considered safe, with few break-ins or street crimes reported</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex p-4">
+            <div class="icon mr-3"><i class="fas fa-bus-alt"></i></div>
+            <div class="text__info">
+              <h3 id="transitTitle"></h3>
+              <p id="transit"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-6 d-flex p-4">
+            <div class="icon mr-3"><i class="fas fa-wifi"></i></div>
+            <div class="text__info">
+              <h3>Connected</h3>
+              <p id="net"></p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex p-4">
+            <div class="icon mr-3"><i class="fas fa-users"></i></div>
+            <div class="text__info">
+              <h3 id="familiesTitle"></h3>
+              <p id="families"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex p-4">
+            <div class="icon mr-3"><i class="fas fa-store"></i></div>
+            <div class="text__info">
+              <h3 id="shoppingTitle"></h3>
+              <p id="shopping"></p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex p-4">
+            <div class="icon mr-3"></div>
+            <div class="text__info">
+              <h3>Close to Something</h3>
+              <p>This Area is generally considered safe, with few break-ins or street crimes reported</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-0 mb-4">
+      </section>
+      
+      <section class="mb-4">
+        <h2 class="mb-4">About this Neighbourhood</h2>
+        <div class="row mb-5">
+          <div class="col-md-6 mb-3">
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda dolores sapiente recusandae ullam exercitationem dolorem aperiam molestias consequuntur nobis eligendi, voluptatibus quo alias eaque sequi fugit, provident obcaecati voluptate?</p>
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <blockquote>
+              "I love living here! Great shopping, amazing people." 
+            </blockquote>
+            <p class="mb-4">-Gina S, resident since 2007</p>
+          </div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda dolores sapiente recusandae ullam exercitationem dolorem aperiam molestias consequuntur nobis eligendi, voluptatibus quo alias eaque sequi fugit, provident obcaecati voluptate?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tempore laudantium ea nemo dignissimos nihil unde harum inventore. Molestias aut enim, eaque doloremque sit iste voluptatibus porro obcaecati repellendus qui cumque labore a placeat totam ad nihil, voluptas iure repellat consequuntur, aliquid nemo ipsam hic eveniet quam? Deserunt totam, ipsam, doloribus facere velit eveniet, necessitatibus fugit perferendis molestias dolorum aspernatur.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-2 gallery-div2">
+            <img number="5" src="" class="w-100 img-fluid streetViewImage gallery-image3" alt=""/>
+          </div>
+          <div class="col-md-4 mb-2 gallery-div2">
+            <img number="6" src="" class="w-100 img-fluid streetViewImage gallery-image3" alt=""/>
+          </div>
+          <div class="col-md-4 mb-2 gallery-div2">
+            <img number="7" src="" class="w-100 img-fluid streetViewImage gallery-image3" alt=""/>
+          </div>
+        </div>
+      </section>
+      <hr class="mt-0 mb-4">
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-md-12 text-center image-app">
+            <h4>Don´t take our word for it. Take a walk in Centretown!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic quas obcaecati!</p>
+            <button type="button" class="btn btn-lg btn-primary">Get the Flavourhood App</button>
+          </div>
+        </div>
+        <hr class="mt-0 mb-4">
+      </section>
+      
+      <section class="mb-4">
+        <div class="container pt-4">
+          <div class="row">
+            <aside class="col-md-4 pt-4 pt-lg-0  d-none d-sm-block">
+              <div class="sidebar sidebar-item">
+                <div class="make-me-sticky">
+                <div class="selection mb-5">
+                  <label for="search-radius">Search Radius:</label>
+                  <select id="search-radius" class="form-select" aria-label="Default select example">
+                    <option value="1000" selected>1 km</option>
+                    <option value="2000">2 km</option>
+                    <option value="3000">3 km</option>
+                    <option value="5000">5 km</option>
+                    <option value="10000">10 km</option>
+                  </select>
+                </div>
+                <p class="scroll-text text-uppercase font-weight-bold mb-4">Local Amenities</p>
+                <div class="navigate d-flex flex-column overflow-auto">
+                  <a id="util" class="text-decoration-none mb-3 navigate-href local-attributes" section="phone%20provider" href="#utilities-div">Utilities <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="fitness" class="text-decoration-none mb-3 navigate-href local-attributes" section="fitness" href="#healthfitness-div">Health & Fitness <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="grocery" class="text-decoration-none mb-3 navigate-href local-attributes" section="grocery" href="#grocerys-div">Grocery <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="safe" class="text-decoration-none mb-3 navigate-href local-attributes" section="safe" href="#safety-div">Safety & Security <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="hospital" class="text-decoration-none mb-3 navigate-href local-attributes" section="hospital" href="#medical-div">Medical <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="community" class="text-decoration-none mb-3 navigate-href local-attributes" section="community" href="#communitys-div">Community <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="college" class="text-decoration-none mb-3 navigate-href local-attributes" section="school" href="#schools-div">Schools <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="bank" class="text-decoration-none mb-3 navigate-href local-attributes" section="bank" href="#banking-div">Banking & Financial <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="church" class="text-decoration-none mb-3 navigate-href local-attributes" section="church" href="#placesofworship-div">Places of Worship <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="child" class="text-decoration-none mb-3 navigate-href local-attributes" section="child%20care" href="#childcare-div">Childcare <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="restaurant" class="text-decoration-none mb-3 navigate-href local-attributes" section="restaurants" href="#restaurants-div">Restaurants <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="entertainment" class="text-decoration-none mb-3 navigate-href local-attributes" section="entertainment" href="#entertainments-div">Culture & Entertainment <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="special" class="text-decoration-none mb-3 navigate-href local-attributes" section="special" href="#specialneeds-div">Senior & Special Needs Services <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="shopping" class="text-decoration-none mb-3 navigate-href local-attributes" section="shopping" href="#shoppings-div">Shopping <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="barbershop" class="text-decoration-none mb-3 navigate-href local-attributes" section="barbershop" href="#aesthetics-div">Beauty & Aesthetics <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="transportation" class="text-decoration-none mb-3 navigate-href local-attributes" section="transportation" href="#transportations-div">Transportation <i class="arrow fas fa-angle-right"></i></a>
+                </div>
+              </div>
+              </div>
+            </aside>
+            <main class="col-md-8 contenido-principal">
+              <div class="container">
+                <div class="row">
+                  <div class="d-md-none col-12">
+                    <form>
+                      <select class="form-control mb-2" id="smallSearchSection">
+                        <option disabled>Local Amenities</option>
+                        <option id="util" class="navigate-href local-attributes" section="phone%20provider" value="#utilities-div" selected>Utilities</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="fitness" value="#healthfitness-div">Health & Fitness</option>
+                        <option id="util" class="navigate-href local-attributes" section="grocery" value="#utilities-div">Grocery</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="safe" value="#healthfitness-div">Safety & Security</option>
+                        <option id="util" class="navigate-href local-attributes" section="hospital" value="#utilities-div">Medical</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="community" value="#healthfitness-div">Community</option>
+                        <option id="util" class="navigate-href local-attributes" section="school" value="#utilities-div">Schools</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="bank" value="#healthfitness-div">Banking & Financial</option>
+                        <option id="util" class="navigate-href local-attributes" section="church" value="#utilities-div">Places of Worship</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="child%20care" value="#healthfitness-div">Childcare</option>
+                        <option id="util" class="navigate-href local-attributes" section="restaurants" value="#utilities-div">Restaurants</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="entertainment" value="#healthfitness-div">Culture & Entertainment</option>
+                        <option id="util" class="navigate-href local-attributes" section="special" value="#utilities-div">Senior & Special Needs Services</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="shopping" value="#healthfitness-div">Shopping</option>
+                        <option id="util" class="navigate-href local-attributes" section="barbershop" value="#utilities-div">Beauty & Aesthetics</option>
+                        <option id="fitness" class="navigate-href local-attributes" section="transportation" value="#healthfitness-div">Transportation</option>
+                      </select>
+                      <select class="form-control mb-2" id="smallSearchRadius">
+                        <option disabled>Search Radius</option>
+                        <option value="1000" selected>1 km</option>
+                        <option value="2000">2 km</option>
+                        <option value="3000">3 km</option>
+                        <option value="5000">5 km</option>
+                        <option value="10000">10 km</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex p-4" id="utilities-div">
+                <div class="numeration mr-3 text-center"><p class="amenities"></p></div>
+                <div class="text__info">
+                  <h3>Utilities</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-lg-left">
+                    <div class="numeration mr-3 text-center"><p id="wifi_score" class="providers"></p></div>
+                    <div class="text__info">
+                      <h4>Internet</h4>
+                      <p id="wifi_text" class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="information-comp text-center text-md-right p-3">
+                  <div id="wifi_rating" class="rating mb-4">
+                  </div>
+                  <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers-next">7.2</p></div>
+                    <div class="text__info">
+                      <h4>Television</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Home Phone</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Electricity</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex p-4" id="healthfitness-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="fitness-score"></p></div>
+                <div class="text__info">
+                  <h3>Health & Fitness</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="fitness-div">
+              </div>
+              <div class="d-flex p-4" id="grocerys-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="grocery-score"></p></div>
+                <div class="text__info">
+                  <h3>Grocery</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="grocery-div">
+              </div>
+              <div class="d-flex p-4" id="safety-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="safe-score"></p></div>
+                <div class="text__info">
+                  <h3>Safety & Security</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="safe-div">
+              </div>
+              <div class="d-flex p-4" id="medical-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="hospital-score"></p></div>
+                <div class="text__info">
+                  <h3>Medical</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="hospital-div">
+              </div>
+              <div class="d-flex p-4" id="communitys-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="community-score"></p></div>
+                <div class="text__info">
+                  <h3>Community</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="community-div">
+              </div>
+              <div class="d-flex p-4" id="schools-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="college-score"></p></div>
+                <div class="text__info">
+                  <h3>Schools</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="college-div">
+              </div>
+              <div class="d-flex p-4" id="banking-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="bank-score"></p></div>
+                <div class="text__info">
+                  <h3>Banking & Financial</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="bank-div">
+              </div>
+              <div class="d-flex p-4" id="placesofworship-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="church-score"></p></div>
+                <div class="text__info">
+                  <h3>Places of Worship</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="church-div">
+              </div>
+              <div class="d-flex p-4" id="childcare-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="child-score"></p></div>
+                <div class="text__info">
+                  <h3>Childcare</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="child-div">
+              </div>
+              <div class="d-flex p-4" id="restaurants-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="restaurant-score"></p></div>
+                <div class="text__info">
+                  <h3>Restaurants</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="restaurant-div">
+              </div>
+              <div class="d-flex p-4" id="entertainments-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="entertainment-score"></p></div>
+                <div class="text__info">
+                  <h3>Culture & Entertainment</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="entertainment-div">
+              </div>
+              <div class="d-flex p-4" id="specialneeds-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="special-score"></p></div>
+                <div class="text__info">
+                  <h3>Senior & Special Needs Services</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="special-div">
+              </div>
+              <div class="d-flex p-4" id="shoppings-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="shopping-score"></p></div>
+                <div class="text__info">
+                  <h3>Shopping</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="shopping-div">
+              </div>
+              <div class="d-flex p-4" id="aesthetics-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="barbershop-score"></p></div>
+                <div class="text__info">
+                  <h3>Beauty & Aesthetics</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="barbershop-div">
+              </div>
+              <div class="d-flex p-4" id="transportations-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="transportation-score"></p></div>
+                <div class="text__info">
+                  <h3>Transportation</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                </div>
+              </div>
+              <hr>
+              <div id="transportation-div">
+              </div>
+            </main>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
