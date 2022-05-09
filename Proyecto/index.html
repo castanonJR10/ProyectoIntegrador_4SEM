@@ -176,7 +176,7 @@
               <div class="sidebar sidebar-item">
                 <div class="make-me-sticky">
                 <div class="selection mb-5">
-                  <label for="search-radius">Search Radius:</label>
+                  <label for="search-radius">Con Radio de:</label>
                   <select id="search-radius" class="form-select" aria-label="Default select example">
                     <option value="1000" selected>1 km</option>
                     <option value="2000">2 km</option>
@@ -185,24 +185,22 @@
                     <option value="10000">10 km</option>
                   </select>
                 </div>
-                <p class="scroll-text text-uppercase font-weight-bold mb-4">Local Amenities</p>
+                <p class="scroll-text text-uppercase font-weight-bold mb-4">Descripción de departamento</p>
                 <div class="navigate d-flex flex-column overflow-auto">
-                  <a id="util" class="text-decoration-none mb-3 navigate-href local-attributes" section="phone%20provider" href="#utilities-div">Utilities <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="fitness" class="text-decoration-none mb-3 navigate-href local-attributes" section="fitness" href="#healthfitness-div">Health & Fitness <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="grocery" class="text-decoration-none mb-3 navigate-href local-attributes" section="grocery" href="#grocerys-div">Grocery <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="safe" class="text-decoration-none mb-3 navigate-href local-attributes" section="safe" href="#safety-div">Safety & Security <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="hospital" class="text-decoration-none mb-3 navigate-href local-attributes" section="hospital" href="#medical-div">Medical <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="community" class="text-decoration-none mb-3 navigate-href local-attributes" section="community" href="#communitys-div">Community <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="college" class="text-decoration-none mb-3 navigate-href local-attributes" section="school" href="#schools-div">Schools <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="bank" class="text-decoration-none mb-3 navigate-href local-attributes" section="bank" href="#banking-div">Banking & Financial <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="church" class="text-decoration-none mb-3 navigate-href local-attributes" section="church" href="#placesofworship-div">Places of Worship <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="child" class="text-decoration-none mb-3 navigate-href local-attributes" section="child%20care" href="#childcare-div">Childcare <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="restaurant" class="text-decoration-none mb-3 navigate-href local-attributes" section="restaurants" href="#restaurants-div">Restaurants <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="entertainment" class="text-decoration-none mb-3 navigate-href local-attributes" section="entertainment" href="#entertainments-div">Culture & Entertainment <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="special" class="text-decoration-none mb-3 navigate-href local-attributes" section="special" href="#specialneeds-div">Senior & Special Needs Services <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="shopping" class="text-decoration-none mb-3 navigate-href local-attributes" section="shopping" href="#shoppings-div">Shopping <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="barbershop" class="text-decoration-none mb-3 navigate-href local-attributes" section="barbershop" href="#aesthetics-div">Beauty & Aesthetics <i class="arrow fas fa-angle-right"></i></a>
-                  <a id="transportation" class="text-decoration-none mb-3 navigate-href local-attributes" section="transportation" href="#transportations-div">Transportation <i class="arrow fas fa-angle-right"></i></a>
+                  <a id="amueblados" class="text-decoration-none mb-3 navigate-href local-attributes" section="amueblados" href="#amueblados-div">Amueblados <i class="arrow fas fa-angle-right"></i></a>
+
+                  <a id="no-amueblados" class="text-decoration-none mb-3 navigate-href local-attributes" section="no-amueblados" href="#no_amueblados-div">No Amueblados <i class="arrow fas fa-angle-right"></i></a>
+
+                  <a id="num-personas" class="text-decoration-none mb-3 navigate-href local-attributes" section="num-personas" href="#num-personas-div">Número de Personas <i class="arrow fas fa-angle-right"></i></a>
+
+                  <a id="num_recamaras" class="text-decoration-none mb-3 navigate-href local-attributes" section="num_recamaras" href="#num_recamaras-div">Número de Recámaras <i class="arrow fas fa-angle-right"></i></a>
+
+                  <a id="num_banos" class="text-decoration-none mb-3 navigate-href local-attributes" section="num_banos" href="#num_banos-div">Número de Baños <i class="arrow fas fa-angle-right"></i></a>
+
+                  <a id="servicios" class="text-decoration-none mb-3 navigate-href local-attributes" section="servicios" href="#servicios-div">Servicios <i class="arrow fas fa-angle-right"></i></a>
+
+                  <a id="precios" class="text-decoration-none mb-3 navigate-href local-attributes" section="precios" href="#precios-div">Precios de Renta <i class="arrow fas fa-angle-right"></i></a>
+
                 </div>
               </div>
               </div>
@@ -213,23 +211,22 @@
                   <div class="d-md-none col-12">
                     <form>
                       <select class="form-control mb-2" id="smallSearchSection">
-                        <option disabled>Local Amenities</option>
-                        <option id="util" class="navigate-href local-attributes" section="phone%20provider" value="#utilities-div" selected>Utilities</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="fitness" value="#healthfitness-div">Health & Fitness</option>
-                        <option id="util" class="navigate-href local-attributes" section="grocery" value="#utilities-div">Grocery</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="safe" value="#healthfitness-div">Safety & Security</option>
-                        <option id="util" class="navigate-href local-attributes" section="hospital" value="#utilities-div">Medical</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="community" value="#healthfitness-div">Community</option>
-                        <option id="util" class="navigate-href local-attributes" section="school" value="#utilities-div">Schools</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="bank" value="#healthfitness-div">Banking & Financial</option>
-                        <option id="util" class="navigate-href local-attributes" section="church" value="#utilities-div">Places of Worship</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="child%20care" value="#healthfitness-div">Childcare</option>
-                        <option id="util" class="navigate-href local-attributes" section="restaurants" value="#utilities-div">Restaurants</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="entertainment" value="#healthfitness-div">Culture & Entertainment</option>
-                        <option id="util" class="navigate-href local-attributes" section="special" value="#utilities-div">Senior & Special Needs Services</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="shopping" value="#healthfitness-div">Shopping</option>
-                        <option id="util" class="navigate-href local-attributes" section="barbershop" value="#utilities-div">Beauty & Aesthetics</option>
-                        <option id="fitness" class="navigate-href local-attributes" section="transportation" value="#healthfitness-div">Transportation</option>
+                        <option disabled>Descripción de departamentos</option>
+
+                        <option id="amueblados" class="navigate-href local-attributes" section="amueblados" value="#amueblados-div" selected>Amueblados</option>
+
+                        <option id="no-amueblados" class="navigate-href local-attributes" section="no-amueblados" value="#no_amueblados-div">No Amueblados</option>
+
+                        <option id="num-personas" class="navigate-href local-attributes" section="num-personas" value="#num-personas-div">Núm de Personas</option>
+
+                        <option id="num_recamaras" class="navigate-href local-attributes" section="num_recamaras" value="#num_recamaras-div">Núm Recámaras</option>
+
+                        <option id="num_banos" class="navigate-href local-attributes" section="num_banos" value="#num_banos-div">Núm de Baños</option>
+
+                        <option id="servicios" class="navigate-href local-attributes" section="servicios" value="#servicios-div">Servicios</option>
+
+                        <option id="precios" class="navigate-href local-attributes" section="precios" value="#precios-div">Precios</option>
+
                       </select>
                       <select class="form-control mb-2" id="smallSearchRadius">
                         <option disabled>Search Radius</option>
@@ -243,28 +240,13 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex p-4" id="utilities-div">
+              <div class="d-flex p-4" id="amueblados-div">
                 <div class="numeration mr-3 text-center"><p class="amenities"></p></div>
                 <div class="text__info">
-                  <h3>Utilities</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                  <h3>Amueblados</h3>
                 </div>
               </div>
               <hr>
-              <div class="d-lg-flex">
-                <div class="d-flex p-4 text-lg-left">
-                    <div class="numeration mr-3 text-center"><p id="wifi_score" class="providers"></p></div>
-                    <div class="text__info">
-                      <h4>Internet</h4>
-                      <p id="wifi_text" class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
-                    </div>
-                </div>
-                <div class="information-comp text-center text-md-right p-3">
-                  <div id="wifi_rating" class="rating mb-4">
-                  </div>
-                  <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
-                </div>
-              </div>
               <hr>
               <div class="d-lg-flex">
                 <div class="d-flex p-4 text-left">
@@ -305,6 +287,42 @@
                 </div>
               </div>
               <hr>
+              <hr>
+              <div class="d-flex p-4" id="no_amueblados-div">
+                <div class="numeration mr-3 text-center"><p class="amenities" id="fitness-score"></p></div>
+                <div class="text__info">
+                  <h3>No Amueblados</h3>
+                </div>
+              </div>
+              <hr>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Electricity</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Electricity</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <hr>
               <div class="d-lg-flex">
                 <div class="d-flex p-4 text-left">
                     <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
@@ -318,153 +336,239 @@
                 </div>
               </div>
               <hr>
-              <div class="d-flex p-4" id="healthfitness-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="fitness-score"></p></div>
-                <div class="text__info">
-                  <h3>Health & Fitness</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="fitness-div">
-              </div>
-              <div class="d-flex p-4" id="grocerys-div">
+              <div class="d-flex p-4" id="num-personas-div">
                 <div class="numeration mr-3 text-center"><p class="amenities" id="grocery-score"></p></div>
                 <div class="text__info">
-                  <h3>Grocery</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                  <h3>Número de Personas</h3>
                 </div>
               </div>
               <hr>
-              <div id="grocery-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
               </div>
-              <div class="d-flex p-4" id="safety-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex p-4" id="num_recamaras-div">
                 <div class="numeration mr-3 text-center"><p class="amenities" id="safe-score"></p></div>
                 <div class="text__info">
-                  <h3>Safety & Security</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                  <h3>Número de Recámaras</h3>
                 </div>
               </div>
               <hr>
-              <div id="safe-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
               </div>
-              <div class="d-flex p-4" id="medical-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex p-4" id="num_banos-div">
                 <div class="numeration mr-3 text-center"><p class="amenities" id="hospital-score"></p></div>
                 <div class="text__info">
-                  <h3>Medical</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                  <h3>Número de baños</h3>
                 </div>
               </div>
               <hr>
-              <div id="hospital-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
               </div>
-              <div class="d-flex p-4" id="communitys-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex p-4" id="servicios-div">
                 <div class="numeration mr-3 text-center"><p class="amenities" id="community-score"></p></div>
                 <div class="text__info">
-                  <h3>Community</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                  <h3>Servicios</h3>
                 </div>
               </div>
               <hr>
-              <div id="community-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
               </div>
-              <div class="d-flex p-4" id="schools-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex p-4" id="precios-div">
                 <div class="numeration mr-3 text-center"><p class="amenities" id="college-score"></p></div>
                 <div class="text__info">
-                  <h3>Schools</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+                  <h3>Precios</h3>
                 </div>
               </div>
               <hr>
-              <div id="college-div">
+              <hr>
+              <div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
               </div>
-              <div class="d-flex p-4" id="banking-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="bank-score"></p></div>
-                <div class="text__info">
-                  <h3>Banking & Financial</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
+              <hr><div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
+                </div>
+              </div>
+              <hr><div class="d-lg-flex">
+                <div class="d-flex p-4 text-left">
+                    <div class="numeration mr-3 text-center"><p class="providers">10</p></div>
+                    <div class="text__info">
+                      <h4>Natural Gas</h4>
+                      <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distin </p>
+                    </div>
+                </div>
+                <div class="d-lg-flex align-items-center information-comp p-3 text-center text-md-right">
+                    <button type="button" class="btn btn-lg btn-primary">Compare providers</button>
                 </div>
               </div>
               <hr>
-              <div id="bank-div">
-              </div>
-              <div class="d-flex p-4" id="placesofworship-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="church-score"></p></div>
-                <div class="text__info">
-                  <h3>Places of Worship</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="church-div">
-              </div>
-              <div class="d-flex p-4" id="childcare-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="child-score"></p></div>
-                <div class="text__info">
-                  <h3>Childcare</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="child-div">
-              </div>
-              <div class="d-flex p-4" id="restaurants-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="restaurant-score"></p></div>
-                <div class="text__info">
-                  <h3>Restaurants</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="restaurant-div">
-              </div>
-              <div class="d-flex p-4" id="entertainments-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="entertainment-score"></p></div>
-                <div class="text__info">
-                  <h3>Culture & Entertainment</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="entertainment-div">
-              </div>
-              <div class="d-flex p-4" id="specialneeds-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="special-score"></p></div>
-                <div class="text__info">
-                  <h3>Senior & Special Needs Services</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="special-div">
-              </div>
-              <div class="d-flex p-4" id="shoppings-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="shopping-score"></p></div>
-                <div class="text__info">
-                  <h3>Shopping</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="shopping-div">
-              </div>
-              <div class="d-flex p-4" id="aesthetics-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="barbershop-score"></p></div>
-                <div class="text__info">
-                  <h3>Beauty & Aesthetics</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
-              <hr>
-              <div id="barbershop-div">
-              </div>
-              <div class="d-flex p-4" id="transportations-div">
-                <div class="numeration mr-3 text-center"><p class="amenities" id="transportation-score"></p></div>
-                <div class="text__info">
-                  <h3>Transportation</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem nesciunt repudiandae cupiditate voluptates optio distinctio velit saepe, tempore alias reiciendis. Ipsum quasi sunt eum, alias quos doloremque aspernatur inventore est, quidem incidunt officia dicta sapiente non excepturi placeat. Ducimus, voluptatum dolorem minima blanditiis vel aliquam id exercitationem perferendis quae.</p>
-                </div>
-              </div>
               <hr>
               <div id="transportation-div">
               </div>
