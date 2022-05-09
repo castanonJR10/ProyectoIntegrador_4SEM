@@ -13,19 +13,28 @@
     <script src="js/jquery-ui/jquery-ui.min.js"></script>
     <script src="plugins/rating/jquery.raty.js"></script>
     <script src="https://kit.fontawesome.com/487d1d149e.js" crossorigin="anonymous"></script>
+      <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
   <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-        <div class="main">
-          <div class="form-group has-search mb-0">
-            <span class="fa fa-search form-control-feedback"></span>
-            <input type="text" class="form-control" id="search" placeholder="Search">
-          </div>
-        </div>
-      </div>
-    </div>
+    
+
     <hr class="mt-0 mb-4">
     <div id="loadingSection" class="col-12 hidden text-center"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
     <div id="gallerySection">
@@ -36,49 +45,50 @@
           </div>
         </div>
         <div class="row">
+          <h1 class="mb-5">Departamento con 3 baños y 2 cuartos</h1>
           <div class="col-md-9 d-flex justify-content-start">
-            <h1 class="mb-2">Departamento con 3 baños y 2 cuartos</h1>
             <p id="subtitle"></p>
           </div>
           <div class="search-nav col-md-3 d-flex justify-content-around">
-              <a class="text-decoration-none" href="#!">Map</a>
-              <a class="text-decoration-none" href="#!">Save</a>
-              <a class="text-decoration-none" href="#!">Print</a>
+              <a class="text-decoration-none" href="#!">Mapa</a>
+              <a class="text-decoration-none" href="#!">Guardar</a>
+              <a class="text-decoration-none" href="#!">Imprimir</a>
           </div>
         </div>
         <!-- Gallery -->
         <div class="row">
           <div class="gallery-div col-lg-6 col-md-12 mb-lg-0 p-2">
-            <img id="streetViewImage" number="0" src="img/getApp.jpg" class="gallery-img1 pb-1 w-100 streetViewImage" alt=""/>
+            <img id="streetViewImage" number="0" src="img/depto.jpg" class="gallery-img1 pb-1 w-100 streetViewImage" alt=""/>
           </div>
 
           <div class="gallery-div col-lg-3 col-md-6 mb-lg-0 p-2">
-            <img src="img/getApp.jpg" number="1" class="gallery-img2 w-100 pb-2 streetViewImage" alt=""/>
-            <img src="img/getApp.jpg" number="2" class="gallery-img2 w-100 pb-1 streetViewImage" alt=""/>
+            <img src="img/baño-depto.jpg" number="1" class="gallery-img2 w-100 pb-2 streetViewImage" alt=""/>
+            <img src="img/baño2-depto.jpg" number="2" class="gallery-img2 w-100 pb-1 streetViewImage" alt=""/>
           </div>
 
           <div class="gallery-div col-lg-3 col-md-6 mb-lg-0 p-2">
-            <img src="img/getApp.jpg" number="3" class="gallery-img2 w-100 pb-2 streetViewImage" alt=""/>
-            <img src="img/getApp.jpg" number="4" class="gallery-img2 w-100 pb-1 streetViewImage" alt=""/>
+            <img src="img/cocina-depto.jpg" number="3" class="gallery-img2 w-100 pb-2 streetViewImage" alt=""/>
+            <img src="img/sala-depto.jpg" number="4" class="gallery-img2 w-100 pb-1 streetViewImage" alt=""/>
           </div>
         </div>
         <hr class="mt-4 mb-4">
         <!-- Gallery -->
+
       </section>
       <section class="mb-4">
         <div class="row">
           <div class="col-md-6 d-flex p-4">
-            <div class="icon mr-3"><i class="fas fa-shield-alt"></i></div>
+            <div class="icon mr-3"><i class="	fas fa-bed"></i></div>
             <div class="text__info">
-              <h3>Safe</h3>
-              <p>This Area is generally considered safe, with few break-ins or street crimes reported</p>
+              <h3>Cuartos</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatem assumenda aperiam autem iure illum sunt! Iste, ipsa eaque.</p>
             </div>
           </div>
           <div class="col-md-6 d-flex p-4">
-            <div class="icon mr-3"><i class="fas fa-bus-alt"></i></div>
+            <div class="icon mr-3"><i class="	fas fa-car"></i></div>
             <div class="text__info">
-              <h3 id="transitTitle"></h3>
-              <p id="transit"></p>
+              <h3>Estacionamiento</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatem assumenda aperiam autem iure illum sunt! Iste, ipsa eaque.</p>
             </div>
           </div>
         </div>
@@ -86,31 +96,31 @@
           <div class="col-md-6 d-flex p-4">
             <div class="icon mr-3"><i class="fas fa-wifi"></i></div>
             <div class="text__info">
-              <h3>Connected</h3>
-              <p id="net"></p>
+              <h3>Red Wi-Fi</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laboriosam!</p>
             </div>
           </div>
           <div class="col-md-6 d-flex p-4">
             <div class="icon mr-3"><i class="fas fa-users"></i></div>
             <div class="text__info">
-              <h3 id="familiesTitle"></h3>
-              <p id="families"></p>
+              <h3>Inquilinos</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis exercitationem voluptates tempora delectus veniam quo.</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 d-flex p-4">
-            <div class="icon mr-3"><i class="fas fa-store"></i></div>
+            <div class="icon mr-3"><i class="fas fa-bath"></i></div>
             <div class="text__info">
-              <h3 id="shoppingTitle"></h3>
-              <p id="shopping"></p>
+              <h3>Baños</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
           <div class="col-md-6 d-flex p-4">
-            <div class="icon mr-3"></div>
+            <div class="icon mr-4"><i class="	fas fa-utensils"></i></div>
             <div class="text__info">
-              <h3>Close to Something</h3>
-              <p>This Area is generally considered safe, with few break-ins or street crimes reported</p>
+              <h3>Cocina</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </div>
@@ -118,7 +128,7 @@
       </section>
       
       <section class="mb-4">
-        <h2 class="mb-4">About this Neighbourhood</h2>
+        <h2 class="mb-4">Acerca del lugar</h2>
         <div class="row mb-5">
           <div class="col-md-6 mb-3">
             <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda dolores sapiente recusandae ullam exercitationem dolorem aperiam molestias consequuntur nobis eligendi, voluptatibus quo alias eaque sequi fugit, provident obcaecati voluptate?</p>
@@ -135,7 +145,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tempore laudantium ea nemo dignissimos nihil unde harum inventore. Molestias aut enim, eaque doloremque sit iste voluptatibus porro obcaecati repellendus qui cumque labore a placeat totam ad nihil, voluptas iure repellat consequuntur, aliquid nemo ipsam hic eveniet quam? Deserunt totam, ipsam, doloribus facere velit eveniet, necessitatibus fugit perferendis molestias dolorum aspernatur.</p>
           </div>
         </div>
-        <div class="row">
+         <!--<div class="row">
           <div class="col-md-4 mb-2 gallery-div2">
             <img number="5" src="" class="w-100 img-fluid streetViewImage gallery-image3" alt=""/>
           </div>
@@ -145,15 +155,15 @@
           <div class="col-md-4 mb-2 gallery-div2">
             <img number="7" src="" class="w-100 img-fluid streetViewImage gallery-image3" alt=""/>
           </div>
-        </div>
+        </div>-->
+        
       </section>
       <hr class="mt-0 mb-4">
       <section class="mb-4">
         <div class="row">
           <div class="col-md-12 text-center image-app">
-            <h4>Don´t take our word for it. Take a walk in Centretown!</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic quas obcaecati!</p>
-            <button type="button" class="btn btn-lg btn-primary">Get the Flavourhood App</button>
+            <h4>¡El mejor lugar para tus necesidades, al mejor precio!</h4>
+            <button type="button" class="btn btn-lg btn-primary">Seguir navegando</button>
           </div>
         </div>
         <hr class="mt-0 mb-4">
