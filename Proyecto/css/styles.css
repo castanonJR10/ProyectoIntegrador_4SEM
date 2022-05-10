@@ -12,6 +12,7 @@ html{
 
 .has-search .form-control {
   padding-left: 2.375rem;
+  margin-top: 5rem;
 }
 
 .has-search .form-control-feedback {
@@ -40,11 +41,12 @@ blockquote{
 
 .image-app{
   background-image: url(../img/getApp.jpg);
-  background-repeat: no-repeat;
   width: 100%;
   color: #fff;
   padding: 4rem;
+  
 }
+
 @media (min-width: 480px) {
     .image-app{
       padding: 6rem;
@@ -54,6 +56,14 @@ blockquote{
 .image-app .btn{
   color: #000;
   background-color: #fff;
+  border: none;
+  font-size: .75rem;
+  padding: .7rem 1.5rem;
+}
+
+.image-app .btn:hover{
+  color: #000;
+  background-color: rgb(214, 214, 214);
   border: none;
   font-size: .75rem;
   padding: .7rem 1.5rem;
@@ -100,6 +110,7 @@ blockquote{
   color: #aaa;
 }
 
+
 .navigate .navigate-href{
   color: rgb(54, 54, 54);
 }
@@ -108,6 +119,7 @@ blockquote{
   color: #000;
   font-size: 1.1rem;
 }
+
 
 .sidebar-item {
   position: absolute;
@@ -143,6 +155,12 @@ blockquote{
     height: calc(50%); /* height of container */
     object-fit: cover;
   }
+  
+}
+@media(max-width: 768px){
+  .navigate .navigate-href{
+    visibility: hidden;
+  }
 }
 
 .search-nav a{
@@ -163,7 +181,7 @@ blockquote{
     object-fit: cover;
   }
 }
-
+.navigate
 
 /*Loading Animation*/
 .lds-ellipsis {
